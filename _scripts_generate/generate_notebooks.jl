@@ -177,9 +177,9 @@ function process_file(fl, outputfolder, filetype=[:jl, :md, :nb][3];
             execute
         end
 
-        kwargs = (credit=false, execute=ex, mdstrings=true, preprocess=nb_sub ∘ pre_fn, flavor, kws...)
+        kwargs = (credit=false, execute=ex, mdstrings=true, preprocess=pre_fn, flavor, kws...)
         if filetype==:jl
-            Literate.script(fl, outputfolder; kwargs...)
+            Literate.script(fl, outputfolder; kwargs..., mdstrings=false)
         elseif filetype==:md
             Literate.markdown(fl, outputfolder; kwargs...)
         elseif filetype==:nb
@@ -203,7 +203,7 @@ mkpath("../notebooks-solution/figures")
 for fl in notebook_files
     for typ in [:assignment, :sol]
         outputfolder = typ==:assignment ? "../notebooks" : "../notebooks-solution"
-        process_file(fl, outputfolder, filetype=[:jl, :md, :nb][3],
+        process_file(fl, outputfolder, [:jl, :md, :nb][3],
                               make_outputs=typ)
 
         for ff in readdir("figures/")
@@ -212,12 +212,12 @@ for fl in notebook_files
     end
 end
 
-mkpath("../scripts-tmp/figures")
-mkpath("../scripts-tmp-solution/figures")
+mkpath("../scripts/figures")
+mkpath("../scripts-solution/figures")
 for fl in script_files
     for typ in [:assignment, :sol]
-        outputfolder = typ==:assignment ? "../scripts-tmp" : "../scripts-tmp-solution"
-        process_file(fl, outputfolder, filetype=[:jl, :md, :nb][1],
+        outputfolder = typ==:assignment ? "../scripts" : "../scripts-solution"
+        process_file(fl, outputfolder, [:jl, :md, :nb][1],
                               make_outputs=typ)
 
         for ff in readdir("figures/")
@@ -229,3 +229,5 @@ end
 
 # cp("../Project.toml", "../notebooks/Project.toml", force=true)
 # cp("../Project.toml", "../notebooks-solution//Project.toml", force=true)
+
+#Literate.script("julia-basics.jl", "../scripts", preprocess=pre_fn, mdstrings=false)
