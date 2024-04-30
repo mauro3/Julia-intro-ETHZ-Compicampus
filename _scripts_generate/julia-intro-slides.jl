@@ -6,6 +6,10 @@ md"""
 # Introduction to Julia
 
 ![julia-logo](./figures/l1_julia-logo.png)
+
+Compicampus ETHZ -- 2024
+
+[github.com/mauro3/Julia-intro-ETHZ-Compicampus](https://github.com/mauro3/Julia-intro-ETHZ-Compicampus)
 """
 
 
