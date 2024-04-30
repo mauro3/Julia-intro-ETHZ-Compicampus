@@ -28,6 +28,15 @@ md"""
 # The format
 
 Material is on GitHub https://github.com/mauro3/Julia-intro-ETHZ-Compicampus
+
+Structure:
+- this intro talk
+- quick intro on VS-Code editor
+- Hands-on on
+  - Julia basics
+  - package installations
+  - plotting
+- small project wrapping things up
 """
 
 #src #########################################################################
@@ -178,6 +187,8 @@ md"""
 The documentation of Julia is good and can be found at [https://docs.julialang.org](https://docs.julialang.org); although for learning it might be a bit terse...
 
 There are also tutorials, see [https://julialang.org/learning/](https://julialang.org/learning/).
+
+Differences from other languages: [https://docs.julialang.org/en/v1/manual/noteworthy-differences/](https://docs.julialang.org/en/v1/manual/noteworthy-differences/)
 
 The community of Julia is helpful and active:
 - [discourse.julialang.org/](https://discourse.julialang.org/) is good for long form questions

@@ -90,6 +90,7 @@ Arrays are the bread and butter of science...
 
 - indexing starts at 1
 - uses `[]`
+- in Julia they are column-major (like in Matlab, unlike Python)
 """
 
 # Task: assign vectors to `a`, and `b` and the concatenate them using `;`:
