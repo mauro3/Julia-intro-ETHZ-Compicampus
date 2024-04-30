@@ -17,7 +17,8 @@ using Literate
 @assert @__DIR__()==pwd() "Need to be in scripts folder"
 
 # add your notebook here:
-notebook_files = ["julia-basics.jl",]
+notebook_files = ["julia-intro-slides.jl", ]
+script_files = ["julia-basics.jl",]
 
 # this file-types are just copied over
 asset_files = [".png"]
@@ -210,6 +211,21 @@ for fl in notebook_files
         end
     end
 end
+
+mkpath("../scripts-tmp/figures")
+mkpath("../scripts-tmp-solution/figures")
+for fl in script_files
+    for typ in [:assignment, :sol]
+        outputfolder = typ==:assignment ? "../scripts-tmp" : "../scripts-tmp-solution"
+        process_file(fl, outputfolder, filetype=[:jl, :md, :nb][1],
+                              make_outputs=typ)
+
+        for ff in readdir("figures/")
+            cp(joinpath("figures",ff), joinpath(outputfolder,"figures",ff), force=true)
+        end
+    end
+end
+
 
 # cp("../Project.toml", "../notebooks/Project.toml", force=true)
 # cp("../Project.toml", "../notebooks-solution//Project.toml", force=true)
