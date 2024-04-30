@@ -1,5 +1,6 @@
 #src # This is needed to make this run as normal Julia file:
 using Markdown #src
+using Markdown #jl
 
 #src #########################################################################
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
@@ -104,6 +105,20 @@ a = [2, 3]
 #hint ## ?push!
 #sol push!(b, 1)
 #sol push!(b, 3, 4)
+
+#src #########################################################################
+#nb # %% A slide [markdown] {"slideshow": {"slide_type": "subslide"}}
+md"""
+### Side note: the !-notation
+
+By convention, functions named ending with `!` are mutating functions.
+
+Thus `push!(A, 4)` will update `A` to contain also the element `4`.
+
+Note that the `!` is just part of the name, it's not special syntax (unlike the `.` which you'll
+encounter further down)
+"""
+
 
 #src #########################################################################
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "subslide"}}
@@ -422,78 +437,4 @@ md"""
 *Multiple dispatch makes Julia packages very composable!*
 
 This is a key characteristic of the Julia package ecosystem.
-"""
-
-
-#src #########################################################################
-#nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
-md"""
-## Modules and packages
-
-Modules can be used to structure code into larger entities, and be used to divide it into
-different name spaces.  We will not make much use of those, but if interested see
-[https://docs.julialang.org/en/v1/manual/modules/](https://docs.julialang.org/en/v1/manual/modules/)
-
-**Packages** are the way people distribute code and we'll make use of them extensively.
-In the first example, the Lorenz ODE, you saw
-```
-using Plots
-```
-This statement loads the package `Plots` and makes its functions
-and types available in the current session and use it like so:
-"""
-
-using Plots
-plot( (1:10).^2 )
-
-#src #########################################################################
-#nb # %% A slide [markdown] {"slideshow": {"slide_type": "subslide"}}
-md"""
-### Packages
-
-All public Julia packages are listed on [https://juliahub.com/ui/Packages](https://juliahub.com/ui/Packages).
-
-You can install a package, say [`UnPack`](https://github.com/mauro3/UnPack.jl) by
-```julia-repl
-using Pkg
-Pkg.add("UnPack")
-using UnPack
-```
-
-In the REPL, there is also a package-mode (hit `]`) which is for interactive use.
-"""
-
-## Install a package the UnPack.jl package
-## use it, query help on the package itself:
-
-using Pkg
-#hint ##
-#sol Pkg.add("UnPack")
-#sol using UnPack
-
-#-
-
-#hint ##
-#sol #?UnPack
-
-md"""
-### Packages of this short course
-
-This short course uses a few packages, you can see them in the
-[Project.toml](https://github.com/mauro3/Julia-intro-for-geoscience-EGU2024/blob/main/Project.toml) of the repo.
-Consult the README of https://github.com/mauro3/Julia-intro-for-geoscience-EGU2024 for how to install them on your local machine.
-"""
-
-
-#src #########################################################################
-#nb # %% A slide [markdown] {"slideshow": {"slide_type": "subslide"}}
-md"""
-## This concludes the rapid Julia intro
-
-There are many more features of Julia for sure but this should get you started, and setup for
-the exercises.  (Let us know if you feel we left something out which would have been helpful for the exercises).
-
-Remember you can self-help with:
-- using `?` at the notebook.  Similarly there is an `apropos` function.
-- the docs are your friend [https://docs.julialang.org/en/v1/](https://docs.julialang.org/en/v1/)
 """
