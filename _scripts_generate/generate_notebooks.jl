@@ -17,8 +17,8 @@ using Literate
 @assert @__DIR__()==pwd() "Need to be in scripts folder"
 
 # add your notebook here:
-notebook_files = ["julia-intro-slides.jl", "predator-prey-slides.jl", "julia-basics.jl", "julia-packages.jl"]
-script_files = ["julia-basics.jl", "julia-packages.jl"]
+notebook_files = ["julia-intro-slides.jl", "predator-prey-slides.jl", "julia-basics.jl", "julia-packages.jl", "plotting-with-plots.jl"]
+script_files = ["julia-basics.jl", "julia-packages.jl", "plotting-with-plots.jl"]
 
 # this file-types are just copied over
 asset_files = [".png"]
