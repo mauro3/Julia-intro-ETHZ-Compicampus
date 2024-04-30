@@ -13,34 +13,21 @@ md"""
 md"""
 # The team
 
-- Lazaro Alonso (@lazarusA)
-  - scientist by day, plotting wizard by night
-  - regular on Julia-discord, slack
-- Jordi Bolibar (@JordiBolibar)
-  - developper of [ODINN.jl](https://github.com/ODINN-SciML/ODINN.jl)
 - Mauro Werder (@mauro3)
   - glaciologist by day
   - maintainer of a few Julia packages
   - programming Julia since 2013
+- Ivan Utkin (@utkinis)
+  - glaciologist by night
+  - doing computational mechanics and HPC
+  - programming Julia since 2015
 """
 
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
 md"""
 # The format
 
-- Material is on GitHub https://github.com/mauro3/Julia-intro-for-geoscience-EGU2024
-- We try to make this short course a little interactive and provide a Jupyter Hub
-  - this will Jupyter Hub will only run this morning
-"""
-
-#nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
-md"""
-## In case anyone doesn't know: Jupyter Notebooks
-
-This is a [Jupyter notebook](https://jupyter.org/); a browser-based computational notebook.
-
-Code cells are executed by putting the cursor into the cell and hitting `shift + enter`.  For more
-info see the [documentation](https://jupyter-notebook.readthedocs.io/en/stable/).
+Material is on GitHub https://github.com/mauro3/Julia-intro-ETHZ-Compicampus
 """
 
 #src #########################################################################
@@ -160,37 +147,6 @@ Julia is:
 
 and also:
 - fast
-"""
-
-#nb # %% A slide [markdown] {"slideshow": {"slide_type": "fragment"}}
-md"""
-![](./figures/l1_flux-vs-tensorflow.png)
-"""
-
-
-#src #########################################################################
-#nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
-md"""
-###  Let's get our hands dirty!
-
-Fire up your JupyterHub:
-- go to Jupyter Hub server on `egu2024.glads.net`
-- log in with a username and password of your choice
-- -> if it does not work than someone took that username already (or the server crashed)
-
-"""
-
-#nb # %% A slide [markdown] {"slideshow": {"slide_type": "fragment"}}
-md"""
-You should find three Jupyter notebooks:
-- `julia-basics.jl`  -- this very notebook
-- `geo-ecosystem.ipynb` -- intro to geo-data processing and visualisation
-- `diff-eqs.ipynb` -- intro to solving and inverting ordinary differential equations
-
-Note that they are all on GitHub, on the repo for this short course:
-[github.com/mauro3/Julia-intro-for-geoscience-EGU2024](https://github.com/mauro3/Julia-intro-for-geoscience-EGU2024)
-
-- -> there are also solution notebooks provided there!
 """
 
 #src #########################################################################
