@@ -172,7 +172,7 @@ md"""
 
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "fragment"}}
 md"""
-<img src="./figures/l1_dynamics.png" alt="predator-prey" width="80%"/>
+<img src="./figures/l1_dynamics.png" alt="motivation" width="80%"/>
 """
 
 #src #########################################################################
@@ -181,6 +181,14 @@ md"""
 ### Julia + GPU = 💜
 
 <img src="./figures/l1_stream.png" alt="stream" width="80%"/>
+"""
+
+#src #########################################################################
+#nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
+md"""
+### Write code once, execute everywhere
+
+<img src="./figures/l1_backend_abstraction.png" alt="backend-abstraction" width="80%"/>
 """
 
 #src #########################################################################
