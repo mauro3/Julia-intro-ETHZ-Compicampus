@@ -53,7 +53,7 @@ To create an environment within VS-Code:
 - right click on it in the side bar to:
   - "Julia: Change to this directory"
   - "Julia: Activate this Environment"
-- in the REPL hit `[`
+- in the REPL hit `]`
 
 Why don't you install `UnPack` in this environment.
 - -> note the two files which were created in this folder: this is where Julia stores the

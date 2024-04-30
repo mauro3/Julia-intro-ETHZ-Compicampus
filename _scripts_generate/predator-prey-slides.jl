@@ -97,4 +97,7 @@ md"""
 5. Bonus: implement symplectic integration scheme for higher accuracy
     1. Replace `out[it-1, 1]` with `out[it, 1]` in the second line (update rule for `out[it, 2]`)
     2. Re-run the simulations, see changing the method influences the results, especially with increased time step
+
+## Resources
+Read the [performance tips](https://docs.julialang.org/en/v1/manual/performance-tips/#man-performance-tips)!
 """

@@ -22,12 +22,13 @@ out_fancy = zeros(nt, 2)
 # solve ODEs in global scope
 out[1, :] .= x0
 @time for it in 2:nt
-    out[it, :] .= out[it-1, :] .+ ...
+    r,f = out[it-1, :]
+    out[it, :] .= out[it-1, :] .+ Δt .*  predator_prey(out[it-1,:], α, β, δ, γ) #[α*r - β * r * f, δ*r*f - γ*f]
 end
-t = range(0, ..., nt)
+t = 0:Δt:(nt-1)*Δt
 
 # visualise results
-plot(...; ylabel="population", label=["prey" "predator"], ls=[:solid :dash], lw=1.5)
+plot(t, out; ylabel="population", label=["prey" "predator"], ls=[:solid :dash], lw=1.5)
 
 # integrate ODEs using functions
 @time t_naive, out_naive = integrate_naive!(...)

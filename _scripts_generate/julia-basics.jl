@@ -353,7 +353,7 @@ md"""
 ### Functions: dot-syntax exercise
 
 Evaluate the function `sin(x) + cos(y)` for
-`x = 0:0.1:pi` and `y = -pi:0.1:pi`.  Remember to use `'`.
+`x = 0:0.1:pi` and `y = -pi:0.1:pi`.  Remember to use `'` to broadcast to a matrix.
 """
 
 #hint ##
