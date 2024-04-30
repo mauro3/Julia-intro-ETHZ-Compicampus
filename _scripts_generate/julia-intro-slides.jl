@@ -167,8 +167,25 @@ md"""
 #src #########################################################################
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
 md"""
-###  Ivan's HPC work
+### Julia for HPC
 
+<img src="./figures/l1_dynamics.png" alt="predator-prey" width="80%"/>
+"""
+
+#src #########################################################################
+#nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
+md"""
+### Julia + GPU = 💜
+
+<img src="./figures/l1_stream.png" alt="stream" width="80%"/>
+"""
+
+#src #########################################################################
+#nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
+md"""
+### Scaling
+
+<img src="./figures/l1_scaling.png" alt="scaling" width="80%"/>
 """
 
 #src #########################################################################

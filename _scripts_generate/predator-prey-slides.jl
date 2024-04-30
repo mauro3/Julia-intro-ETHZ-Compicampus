@@ -3,7 +3,7 @@ using Markdown #src
 
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
 md"""
-# 🔨 Hands-on II: implementing predator-prey model
+### 🔨 Hands-on II: implementing predator-prey model
 
 Let's do some scientific programming in Julia!
 """
@@ -26,7 +26,7 @@ md"""
 
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
 md"""
-# Lotka-Volterra model
+### Lotka-Volterra model
 
 The predator-prey system can be described as a system of ODEs, called a _Lotka-Volterra model_:
 
@@ -44,14 +44,14 @@ $$
 
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
 md"""
-# Expected output
+### Expected output
 
 <img src="./figures/l1_predator-prey.png" alt="predator-prey" width="80%"/>
 """
 
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
 md"""
-# Project structure
+### Project structure
 
 - the boilerplate code for the project is in `project/PredatorPrey.jl`
   - the functions solving the ODEs are in the `src/` folder
@@ -65,7 +65,7 @@ md"""
 
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
 md"""
-# Tasks
+### Tasks
 
 1. Implement the right-hand side of Lotka-Volterra system inside the function `predator_prey` in the file `src/PredatorPrey.jl`
 
