@@ -314,6 +314,18 @@ a, b = rand(4,5), 7
 #src #########################################################################
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "subslide"}}
 md"""
+### Side note: macros `@`
+
+The `@assert` is a macro call.  Macros take code and return new code which is then executed.
+For you as a user these are pretty intuitive to use and are indeed often used in Julia.
+Defining them is beyond the scope of this short course
+"""
+
+
+
+#src #########################################################################
+#nb # %% A slide [markdown] {"slideshow": {"slide_type": "subslide"}}
+md"""
 ### Functions: dot-syntax *IMPORTANT*
 
 Functions which are scalar functions in maths, say `cos`, are only defined for scalars in Julia!
