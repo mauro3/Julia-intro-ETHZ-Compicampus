@@ -41,3 +41,10 @@ $$
 - $\alpha$ and $\gamma$ are prey's growth rate and predator's death rate
 - $\beta$ and $\delta$ are interaction parameters between species
 """
+
+#nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
+md"""
+# Expected output
+
+<img src="./figures/l1_predator-prey.png" alt="predator-prey" width="80%"/>
+"""
