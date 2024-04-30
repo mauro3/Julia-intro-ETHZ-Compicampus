@@ -167,8 +167,11 @@ md"""
 #src #########################################################################
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
 md"""
-### Julia for HPC
+### Julia for HPC -- One of the reasons why we do Julia
+"""
 
+#nb # %% A slide [markdown] {"slideshow": {"slide_type": "fragment"}}
+md"""
 <img src="./figures/l1_dynamics.png" alt="predator-prey" width="80%"/>
 """
 
