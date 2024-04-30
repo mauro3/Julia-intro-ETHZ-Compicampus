@@ -15,7 +15,7 @@ end
 """
     integrate_naive!(out, x0, α, β, δ, γ, Δt, nt)
 
-Integrate Lotka-Volterra ODE system with exlicit Euler time integrator.
+Integrate Lotka-Volterra ODE system with explicit Euler time integrator.
 Returns array of time steps and array of prey and predator populations.
 """
 function integrate_naive!(out, x0, α, β, δ, γ, Δt, nt)
@@ -30,14 +30,14 @@ end
 """
     integrate_fancy!(out, x0, α, β, δ, γ, Δt, nt)
 
-Integrate Lotka-Volterra ODE system in Hamiltonian form with semi-implicit Euler time integrator.
+Integrate Lotka-Volterra ODE system with semi-implicit Euler time integrator.
 Returns array of time steps and array of prey and predator populations.
 """
 function integrate_fancy!(out, x0, α, β, δ, γ, Δt, nt)
     out[1, :] .= x0
     for it in 2:nt
-        out[it, 1] = exp(log(out[it-1, 1]) + Δt * (α - β * out[it-1, 2]))
-        out[it, 2] = exp(log(out[it-1, 2]) + Δt * (δ * out[it, 1] - γ))
+        out[it, 1] = out[it-1, 1] + Δt * (α * out[it-1, 1] - β * out[it-1, 1] * out[it-1, 2])
+        out[it, 2] = out[it-1, 2] + Δt * (δ * out[it, 1] * out[it-1, 2] - γ * out[it-1, 2])
     end
     t = range(0, (nt - 1) * Δt, nt)
     return t, out
