@@ -19,3 +19,10 @@ https://github.com/julia-vscode/julia-vscode#installing-juliavs-codevs-code-juli
 If you have another preferred editor, that is fine too, but look into
 getting the Julia-environment setup:
 https://github.com/JuliaEditorSupport
+
+## Content
+1) Introduction talk https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/blob/main/notebooks/julia-intro-slides.ipynb
+2) Julia basics hands-on https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/blob/main/scripts/julia-basics.jl
+3) Packag management and environments https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/blob/main/scripts/julia-packages.jl
+4) Intro to plotting https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/blob/main/scripts/plotting-with-plots.jl
+5) Project on solving a differential equation https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/tree/main/project/PredatorPrey.jl
