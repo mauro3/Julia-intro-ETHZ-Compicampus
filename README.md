@@ -2,7 +2,7 @@
 
 This course is part of [Compicampus](https://ethz.ch/staffnet/en/it-services/catalogue/support-training/it-training/compicampus/details.10605o.html), the IT course programme especially for students of ETH Zurich.
 
-__Date and time__: 30.04.2024, 18:15-20:45 (2.5hr)
+__Date and time__: 06.11.2024, 18:15-20:45 (2.5hr)
 
 __Location__: [HG D 7.1, Rämistrasse 101, Zürich](https://ethz.ch/en/campus/access/zentrum.html)
 
