@@ -8,7 +8,7 @@ __Location__: [HG D 7.1, Rämistrasse 101, Zürich](https://ethz.ch/en/campus/ac
 
 ## Instructions
 
-Julia (version 1.10): for all operating systems it is best is to use
+Julia (version 1.11): for all operating systems it is best is to use
 "juliaup":
 https://github.com/JuliaLang/juliaup
 
