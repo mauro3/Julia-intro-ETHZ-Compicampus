@@ -55,7 +55,7 @@ language with a bend on technical computing.
 
 - first released in 2012
 - reached version 1.0 in 2018
-- current version 1.10.2 (04.2024)
+- current version 1.11 (11.2024)
 - thriving community, for instance there are currently around 11000 [packages registered](https://juliahub.com/ui/Packages)
 """
 
@@ -89,14 +89,14 @@ end
 md"""
 And its solution plotted
 """
-using Plots
+using GLMakie
 plot(out[1,:], out[2,:], out[3,:])
 
 #src #########################################################################
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
 md"""
 ### Julia in brief
-Julia 1.0 released 2018, now at version 1.10
+Julia 1.0 released 2018, now at version 1.11
 
 Features:
 - general purpose language with a focus on technical computing
@@ -221,6 +221,8 @@ The documentation of Julia is good and can be found at [https://docs.julialang.o
 There are also tutorials, see [https://julialang.org/learning/](https://julialang.org/learning/).
 
 Differences from other languages: [https://docs.julialang.org/en/v1/manual/noteworthy-differences/](https://docs.julialang.org/en/v1/manual/noteworthy-differences/)
+
+ChatGPT, CoPilot and the like speak Julia and are good in translating, say, Python to Julia.
 
 The community of Julia is helpful and active:
 - [discourse.julialang.org/](https://discourse.julialang.org/) is good for long form questions
