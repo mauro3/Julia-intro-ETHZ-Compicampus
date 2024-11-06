@@ -26,7 +26,7 @@ Simple plots
 using GLMakie
 
 plot(1:3)  # a scatter plot, for a line use `line`
-A = rand(50,50);
+A = rand(50, 50);
 #hint ...  ## try heatmap
 #sol heatmap(A)  #
 
@@ -42,3 +42,8 @@ f = Figure()
 scatter(f[1, 1], rand(100, 2))
 lines(f[1, 2], cumsum(randn(100)))
 
+# More customisation: axis labels, subplot titles, mutating the plot
+ax = Axis(f[2, 1]; xlabel="x", ylabel="y", title="subplot")
+lines!(ax, cumsum(randn(20)); label="line", linewidth=3, color=:red)
+scatter!(ax, cumsum(randn(20)); label="scatter", marker=:cross, markersize=rand(5:20, 20))
+axislegend(ax)

@@ -1,45 +1,44 @@
 module PredatorPrey
 
-export predator_prey, integrate_naive!, integrate_fancy!
+export d🐰_dt, d🦊_dt, predator_prey, integrate!
 
 """
-    predator_prey(x, α, β, δ, γ)
+    d🐰_dt(🐰, 🦊, α, β)
 
-Returns the right-hand side of Lotka-Volterra system ODE.
+Returns the right-hand side of the Lotka-Volterra ODE for prey.
 """
-function predator_prey(x, α, β, δ, γ)
-    return α * x[1] - β * x[1] * x[2],
-           δ * x[1] * x[2] - γ * x[2]
-end
+d🐰_dt(🐰, 🦊, α, β) = α * 🐰 - β * 🐰 * 🦊
 
 """
-    integrate_naive!(out, x0, α, β, δ, γ, Δt, nt)
+    d🦊_dt(🐰, 🦊, γ, δ)
 
-Integrate Lotka-Volterra ODE system with explicit Euler time integrator.
-Returns array of time steps and array of prey and predator populations.
+Returns the right-hand side of the Lotka-Volterra ODE for predator.
 """
-function integrate_naive!(out, x0, α, β, δ, γ, Δt, nt)
-    out[1, :] .= x0
-    for it in 2:nt
-        out[it, :] .= out[it-1, :] .+ Δt .* predator_prey(out[it-1, :], α, β, δ, γ)
-    end
-    t = range(0, (nt - 1) * Δt, nt)
-    return t, out
-end
+d🦊_dt(🐰, 🦊, γ, δ) = δ * 🐰 * 🦊 - γ * 🦊
 
 """
-    integrate_fancy!(out, x0, α, β, δ, γ, Δt, nt)
+    predator_prey(🐰, 🦊, α, β, γ, δ)
+
+Returns the right-hand side of the Lotka-Volterra ODE system.
+"""
+predator_prey(🐰, 🦊, α, β, γ, δ) = d🐰_dt(🐰, 🦊, α, β), d🦊_dt(🐰, 🦊, γ, δ)
+
+"""
+    integrate!(out, 🐰0, 🦊0, α, β, γ, δ, Δt, nt)
 
 Integrate Lotka-Volterra ODE system with semi-implicit Euler time integrator.
 Returns array of time steps and array of prey and predator populations.
 """
-function integrate_fancy!(out, x0, α, β, δ, γ, Δt, nt)
-    out[1, :] .= x0
-    for it in 2:nt
-        out[it, 1] = out[it-1, 1] + Δt * (α * out[it-1, 1] - β * out[it-1, 1] * out[it-1, 2])
-        out[it, 2] = out[it-1, 2] + Δt * (δ * out[it, 1] * out[it-1, 2] - γ * out[it-1, 2])
+function integrate!(out, 🐰0, 🦊0, α, β, γ, δ, Δt, nt)
+    out[1, :] .= 🐰0, 🦊0
+    for it in 2:nt+1
+        # hint: use the values from previous time step for both 🐰 and 🦊
+        out[it, 1] = out[it-1, 1] + Δt * d🐰_dt(out[it-1, 1], out[it-1, 2], α, β)
+        # hint: use the freshly computed value of 🐰 from the current time step
+        # and the value of 🦊 from the previous time step
+        out[it, 2] = out[it-1, 2] + Δt * d🦊_dt(out[it, 1], out[it-1, 2], γ, δ)
     end
-    t = range(0, (nt - 1) * Δt, nt)
+    t = range(0, nt * Δt, nt + 1)
     return t, out
 end
 
