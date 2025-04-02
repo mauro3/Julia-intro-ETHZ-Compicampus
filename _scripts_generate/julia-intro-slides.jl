@@ -7,7 +7,7 @@ md"""
 
 ![julia-logo](./figures/l1_julia-logo.png)
 
-Compicampus ETHZ -- 2024
+Compicampus ETHZ -- 2025
 
 [github.com/mauro3/Julia-intro-ETHZ-Compicampus](https://github.com/mauro3/Julia-intro-ETHZ-Compicampus)
 """
@@ -51,12 +51,12 @@ md"""
 [Julia](https://julialang.org/) is a modern, interactive, and high performance programming language.  It's a general purpose
 language with a bend on technical computing.
 
-![julia-logo](./figures/l1_julia-logo-repl.png)
+![julia-repl](./figures/l1_julia-repl.png)
 
 - first released in 2012
 - reached version 1.0 in 2018
-- current version 1.11 (11.2024)
-- thriving community, for instance there are currently around 11000 [packages registered](https://juliahub.com/ui/Packages)
+- current version 1.11.4 (4.2025)
+- thriving community, for instance there are currently around 12000 [packages registered](https://juliahub.com/ui/Packages)
 """
 
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
@@ -96,7 +96,7 @@ plot(out[1,:], out[2,:], out[3,:])
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
 md"""
 ### Julia in brief
-Julia 1.0 released 2018, now at version 1.11
+Julia 1.0 released 2018, now at version 1.11.4
 
 Features:
 - general purpose language with a focus on technical computing
@@ -198,14 +198,6 @@ md"""
 #src #########################################################################
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
 md"""
-### Scaling
-
-<img src="./figures/l1_scaling.png" alt="scaling" width="80%"/>
-"""
-
-#src #########################################################################
-#nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
-md"""
 ###  Let's get our hands dirty!
 
 We will now look at
@@ -239,5 +231,4 @@ md"""
 
 - nice, much used, open source editor [code.visualstudio.com/](https://code.visualstudio.com/)
 - good Julia integration [www.julia-vscode.org/](https://www.julia-vscode.org/)
-
 """
