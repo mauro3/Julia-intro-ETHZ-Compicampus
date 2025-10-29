@@ -89,7 +89,7 @@ end
 md"""
 And its solution plotted
 """
-using GLMakie
+using CairoMakie
 plot(out[1,:], out[2,:], out[3,:])
 
 #src #########################################################################

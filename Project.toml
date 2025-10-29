@@ -1,5 +1,7 @@
 [deps]
+BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
 CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
+IJulia = "7073ff75-c697-5162-941a-fcdaad2a7d2a"
 Literate = "98b081ad-f1c9-55d3-8b20-4c87d4299306"
 Markdown = "d6f4376e-aef5-505a-96c1-9c027394607a"
 UnPack = "3a884ed6-31ef-47d7-9d2a-63182c4928ed"

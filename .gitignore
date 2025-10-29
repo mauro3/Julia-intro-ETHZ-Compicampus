@@ -1,1 +1,5 @@
+# Julia
 Manifest.toml
+
+# Jupyter
+.ipynb_checkpoints

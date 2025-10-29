@@ -301,6 +301,8 @@ JuliaCon 2019 presentation on the subject by Stefan Karpinski
 
 md"""
 # Functions: Multiple dispatch demo
+
+This cool example is based on a [blog post](https://giordano.github.io/blog/2017-11-03-rock-paper-scissors/) by Mose Giordano:
 """
 
 struct Rock end
