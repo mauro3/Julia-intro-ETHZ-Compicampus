@@ -51,20 +51,6 @@ md"""
 
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
 md"""
-### Project structure
-
-- the boilerplate code for the project is in `project/PredatorPrey.jl`
-  - the functions solving the ODEs are in the `src/` folder
-  - the script for model setup, execution, and visualisation is in the `scripts/` folder
-"""
-
-#nb # %% A slide [markdown] {"slideshow": {"slide_type": "fragment"}}
-md"""
-- the solution with all the dots filled is in `project-solution/PredatorPrey.jl`
-"""
-
-#nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
-md"""
 ### Tasks
 
 1. Implement the right-hand side of Lotka-Volterra system inside the functions `d🐰_dt`, `d🦊_dt`, and `predator_prey` in the file `src/PredatorPrey.jl`
