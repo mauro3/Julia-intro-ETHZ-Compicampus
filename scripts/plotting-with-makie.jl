@@ -17,7 +17,7 @@ Installation: see `julia-packages.jl`
 Simple plots
 - `plot` tries to plot the right thing
 """
-using GLMakie
+using CairoMakie
 
 plot(1:3)  # a scatter plot, for a line use `line`
 A = rand(50, 50);
