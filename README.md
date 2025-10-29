@@ -26,7 +26,7 @@ https://github.com/JuliaEditorSupport
 1) Introduction talk https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/blob/main/notebooks/julia-intro-slides.ipynb
 2) De-tour:
    - VSCode and Julia-plugin & Jupyter notebooks and IJulia.jl
-   - pre-compile
+   - pre-compile the Project.toml of this course
 4) Julia basics hands-on https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/blob/main/scripts/julia-basics.jl
 5) Package management and environments https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/blob/main/scripts/julia-packages.jl
 6) Intro to plotting https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/blob/main/scripts/plotting-with-makie.jl
