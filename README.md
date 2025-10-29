@@ -24,8 +24,10 @@ https://github.com/JuliaEditorSupport
 
 ## Content
 1) Introduction talk https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/blob/main/notebooks/julia-intro-slides.ipynb
-2) De-tour: VSCode and Julia-plugin & Jupyter notebooks and IJulia.jl
-3) Julia basics hands-on https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/blob/main/scripts/julia-basics.jl
-4) Package management and environments https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/blob/main/scripts/julia-packages.jl
-5) Intro to plotting https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/blob/main/scripts/plotting-with-makie.jl
-6) Project on solving a differential equation https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/tree/main/project/PredatorPrey.jl
+2) De-tour:
+   - VSCode and Julia-plugin & Jupyter notebooks and IJulia.jl
+   - pre-compile
+4) Julia basics hands-on https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/blob/main/scripts/julia-basics.jl
+5) Package management and environments https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/blob/main/scripts/julia-packages.jl
+6) Intro to plotting https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/blob/main/scripts/plotting-with-makie.jl
+7) Project on solving a differential equation https://github.com/mauro3/Julia-intro-ETHZ-Compicampus/tree/main/project/PredatorPrey.jl
