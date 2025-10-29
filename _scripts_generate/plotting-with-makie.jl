@@ -26,6 +26,13 @@ Simple plots
 using CairoMakie
 
 plot(1:3)  # a scatter plot, for a line use `line`
+
+#src #########################################################################
+#nb # %% A slide [markdown] {"slideshow": {"slide_type": "fragment"}}
+md"""
+Try visualising a heatmap:
+"""
+
 A = rand(50, 50);
 #hint ...  ## try heatmap
 #sol heatmap(A)  #
@@ -41,9 +48,11 @@ The docs are [https://docs.makie.org/stable](https://docs.makie.org/stable/)
 f = Figure()
 scatter(f[1, 1], rand(100, 2))
 lines(f[1, 2], cumsum(randn(100)))
+f
 
 # More customisation: axis labels, subplot titles, mutating the plot
 ax = Axis(f[2, 1]; xlabel="x", ylabel="y", title="subplot")
 lines!(ax, cumsum(randn(20)); label="line", linewidth=3, color=:red)
 scatter!(ax, cumsum(randn(20)); label="scatter", marker=:cross, markersize=rand(5:20, 20))
 axislegend(ax)
+f
