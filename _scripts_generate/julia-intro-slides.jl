@@ -46,6 +46,21 @@ Structure:
 #src #########################################################################
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
 md"""
+## Install Julia and packages
+
+Everyone has Julia installed? Version?
+
+Get packages installed:
+- clone / download this repo
+- start Julia in this folder: `julia --project`
+- install packages:
+   - type `]` (goes into package mode)
+   - `up` download and update packages (takes a while)
+"""
+
+#src #########################################################################
+#nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
+md"""
 ## The Julia programming language
 
 [Julia](https://julialang.org/) is a modern, interactive, and high performance programming language.  It's a general purpose
