@@ -1,15 +1,15 @@
 # An Introduction to the Julia Programming Language
 
-This course is part of [Compicampus](https://ethz.ch/staffnet/en/it-services/catalogue/support-training/it-training/compicampus/details.10605o.html), the IT course programme especially for students of ETH Zurich.
+This course is part of [Compicampus](https://ethz.ch/staffnet/en/it-services/catalogue/support-training/it-training/compicampus.html), the IT course programme especially for students of ETH Zurich.
 
-__Date and time__: 29.10.2025, 18:15-20:45 (2.5hr)
+__Date and time__: 27.10.2025, 18:15-20:45 (2.5hr)
 
-__Location__: [HG D 7.2, Rämistrasse 101, Zürich](https://ethz.ch/en/campus/access/zentrum.html)
+__Location__: [HG D 7.1, Rämistrasse 101, Zürich](https://ethz.ch/en/campus/access/zentrum.html)
 
 ## Instructions
 
-Julia (version 1.12.1): for all operating systems it is best is to use
-"juliaup":
+Julia (version 1.13): for all operating systems it is best is to use
+"juliaup" to install Julia:
 https://github.com/JuliaLang/juliaup
 
 The course is based on either:

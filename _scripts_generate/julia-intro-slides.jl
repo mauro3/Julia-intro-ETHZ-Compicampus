@@ -55,7 +55,7 @@ language with a bend on technical computing.
 
 - first released in 2012
 - reached version 1.0 in 2018
-- current version 1.11.4 (4.2025)
+- current version 1.13 (10.2026)
 - thriving community, for instance there are currently around 12000 [packages registered](https://juliahub.com/ui/Packages)
 """
 
@@ -96,7 +96,7 @@ plot(out[1,:], out[2,:], out[3,:])
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
 md"""
 ### Julia in brief
-Julia 1.0 released 2018, now at version 1.11.4
+Julia 1.0 released 2018, now at version 1.12
 
 Features:
 - general purpose language with a focus on technical computing
@@ -227,8 +227,17 @@ Furthermore, documentation can be gotten with `?xyz`.  Try it (in Jupyter notebo
 #src #########################################################################
 #nb # %% A slide [markdown] {"slideshow": {"slide_type": "slide"}}
 md"""
-###  But first a short de-tour: Visual Studio Code
+###  But first a short de-tour: Visual Studio Code & Jupyter Notebooks setups
 
+VSCode:
 - nice, much used, open source editor [code.visualstudio.com/](https://code.visualstudio.com/)
 - good Julia integration [www.julia-vscode.org/](https://www.julia-vscode.org/)
+
+Jupyter notebooks:
+- Julia runs in Jupyter notebooks, but need to install a Julia-kernel:
+  - launch Julia
+  - `using Pkg; Pkg.add("IJulia")` installs the kernel (and the whole Jupyter notebook-software stack if you don't have it)
+  - start notebooks which will open in the browser with either:
+    - at the command line
+    - in Julia Repl: `using IJulia; notebook()`
 """
