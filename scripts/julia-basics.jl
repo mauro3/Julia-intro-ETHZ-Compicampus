@@ -319,6 +319,7 @@ struct Scissors end
 play(::Rock, ::Paper) = "Paper wins"
 play(::Rock, ::Scissors) = "Rock wins"
 play(::Scissors, ::Paper) = "Scissors wins"
+play(::T, ::T) where T = "Draw" # play two of the same kind
 play(a, b) = play(b, a) # commutative
 
 play(Scissors(), Rock())
