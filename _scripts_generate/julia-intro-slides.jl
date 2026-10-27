@@ -7,7 +7,7 @@ md"""
 
 ![julia-logo](./figures/l1_julia-logo.png)
 
-Compicampus ETHZ -- 2025
+Compicampus ETHZ -- 2026
 
 [github.com/mauro3/Julia-intro-ETHZ-Compicampus](https://github.com/mauro3/Julia-intro-ETHZ-Compicampus)
 """
@@ -214,7 +214,7 @@ There are also tutorials, see [https://julialang.org/learning/](https://julialan
 
 Differences from other languages: [https://docs.julialang.org/en/v1/manual/noteworthy-differences/](https://docs.julialang.org/en/v1/manual/noteworthy-differences/)
 
-ChatGPT, CoPilot and the like speak Julia and are good in translating, say, Python to Julia.
+ChatGPT, Claude, CoPilot and the like speak Julia and are good in translating, say, Python to Julia.
 
 The community of Julia is helpful and active:
 - [discourse.julialang.org/](https://discourse.julialang.org/) is good for long form questions
